@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["hello@spiderable.org"]
   gem.description   = %q{Allows your rails application to be spiderable by crawlers}
   gem.summary       = %q{Allows your rails application to be spiderable by crawlers}
-  gem.homepage      = "spiderable.org"
+  gem.homepage      = "http://www.spiderable.org"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
