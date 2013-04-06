@@ -1,6 +1,6 @@
 # Spiderable
 
-Adds support for rails applications. (Visit http://spiderable.org if you don't have an account)
+Adds support for rails applications. (Visit http://www.spiderable.org if you don't have an account)
 
 ## Installation
 
