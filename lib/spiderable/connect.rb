@@ -1,6 +1,6 @@
 module Spiderable
   module Connect
-    BASE_URL = 'http://localhost:3000'
+    BASE_URL = 'http://www.spiderable.org'
     
     def self.get_url_contents(url)
       contents = Faraday.get("#{BASE_URL}/api/v1/pages.json?url=#{url}&token=#{Config.token}")
