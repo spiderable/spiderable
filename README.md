@@ -22,9 +22,11 @@ Add a configuration file (config/spiderable.rb):
 
     Spiderable::Config.token = '[YOUR TOKEN]'
 
-Thats it! To test it out, visit a url with ?_escaped_fragment_= at the end. 
+Thats it! To test it out, visit a url with **?_escaped_fragment_=** at the end. 
 
     http://mysite.com?_escaped_fragment_=
+
+**NOTE:** On localhost, spiderable won't work since we can't reach it from spiderable.org. In order to test in development, check out localtunnel (http://progrium.com/localtunnel/)
 
 ## Contributing
 
