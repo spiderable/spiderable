@@ -20,11 +20,11 @@ Or install it yourself as:
 
 Add a configuration file (config/spiderable.rb):
 
-  Spiderable::Config.token = '[YOUR TOKEN]'
+    Spiderable::Config.token = '[YOUR TOKEN]'
 
 Thats it! To test it out, visit a url with ?_escaped_fragment_= at the end. 
 
-  http://mysite.com?_escaped_fragment_=
+    http://mysite.com?_escaped_fragment_=
 
 ## Contributing
 
