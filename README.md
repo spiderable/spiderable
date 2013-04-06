@@ -1,6 +1,6 @@
 # Spiderable
 
-TODO: Write a gem description
+Adds support for seo 
 
 ## Installation
 
@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add a configuration file (config/spiderable.rb):
+
+  Spiderable::Config.token = '[YOUR TOKEN]'
+
+Thats it! To test it out, visit a url with ?_escaped_fragment_= at the end. 
+
+  http://mysite.com?_escaped_fragment_=
 
 ## Contributing
 
