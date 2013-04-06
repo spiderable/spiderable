@@ -30,9 +30,13 @@ module Spiderable
 
         if is_bot
           url  = Crawler.urlFromRack(environment)
-          html = Connect.get_url_contents(url)
+          html = Connect.get_url_contents(url) rescue "FAIL\n"
 
-          [200, {"Content-Type" => "text/html; charset=utf-8"}, [html]]
+          if html == "FAIL\n"
+            @application.call(environment)
+          else
+            [200, {"Content-Type" => "text/html; charset=utf-8"}, [html]]
+          end
         else
           @application.call(environment)
         end
