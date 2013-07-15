@@ -25,8 +25,8 @@ module Spiderable
       end
 
       def call(environment)
-        is_bot = environment["HTTP_USER_AGENT"].match(/\(.*https?:\/\/.*\)/) ||
-                  environment['QUERY_STRING'].include?("_escaped_fragment_")
+        is_bot = (environment["HTTP_USER_AGENT"] && environment["HTTP_USER_AGENT"].match(/\(.*https?:\/\/.*\)/)) ||
+                  (environment['QUERY_STRING'] && environment['QUERY_STRING'].include?("_escaped_fragment_"))
 
         if is_bot
           url  = Crawler.urlFromRack(environment)
